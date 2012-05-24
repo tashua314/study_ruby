@@ -1,4 +1,6 @@
 Toraja::Application.routes.draw do
+  resources :notes
+
   get "top/index"
   root to:"top#index"
   resources :blocks, only: [:create, :update]
